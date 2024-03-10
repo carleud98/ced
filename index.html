@@ -18,12 +18,24 @@
   <body>
     <!-- THIS FIRST SECTION IS FOR THE NAVIGATION BAR AND/OR TITLE BAR -->
 
-    <section class="nav-bar">
-      <div class="title">
+    <section class="nav-bar grid-container">
+      <!-- NAME & LOGO -->
+      <div class="title grid-item">
         <img src="./icons/logo.png" alt="" class="web-logo" />
         <h1>CED</h1>
       </div>
-      <div class="menu-tabs">
+      <!-- DROPDOWN BUTTON -->
+      <div class="dropdown grid-item">
+        <img
+          id="toggleBtn"
+          onclick="dropdownFunction()"
+          src="./icons/dropdown-icon.png"
+          alt=""
+          class="web-logo dropdown-btn"
+        />
+      </div>
+      <!-- MENU TABS -->
+      <div id="toggleMenu" class="menu-tabs dropdown-content grid-item">
         <a href="#" class="menu-tabs-link">Me</a>
         <a href="#" class="menu-tabs-link">Portfolio</a>
         <a href="#" class="menu-tabs-link">Contact</a>
@@ -56,15 +68,19 @@
 
       <!-- THIS IS THE DESCRIPTION INFORMATIONS -->
 
-      <section class="about-me-description-section">
-        <section class="description-img-box">
-          <img src="./icons/web-dev-icon.png" alt="" />
-        </section>
-        <section class="description-text-box">
-          <h5>Web Development</h5>
-        </section>
+      <section class="text-description">
+        <p>
+          I'm a passionate Frontend Developer and Graphic Designer based in
+          Canada. My journey into the world of coding began in 2022, and ever
+          since, I've been dedicated to crafting visually appealing and
+          user-friendly digital experiences. With a keen eye for design and a
+          love for clean, efficient code, I strive to bring creativity and
+          functionality together in every project I undertake.
+        </p>
       </section>
     </main>
+
+    <!-- THIS IS THE FOOTER OF THE WEBSITE -->
 
     <footer>
       <div>
@@ -93,6 +109,6 @@
       </div>
     </footer>
 
-    <script src="#"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
