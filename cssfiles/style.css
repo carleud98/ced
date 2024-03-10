@@ -137,27 +137,11 @@ h6 {
 
 /* THIS SECTION IS FOR THE PROFIL DESCRIPTION INFORMATION  */
 
-.about-me-description-section {
-  background-color: var(--primary-color);
-  color: var(--forth-color);
-  margin: 0 0 30px;
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
-}
-
-.description-img-box {
-  width: 50vw;
-  text-align: center;
-}
-
-.description-text-box {
-  width: 50vw;
-  background-color: var(--primary-color);
-  color: var(--forth-color);
-  padding: 2% 10% 0;
-  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  box-shadow: 10px 9px #000000;
+.text-description {
+  background-color: #dfdfdf;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
 }
 
 /* THIS IS FOR THE FOOTER OF THE WEBSITE */
@@ -185,4 +169,21 @@ footer {
 
 .link-icons {
   width: 30px;
+}
+
+/* THIS BELOW IS FOR THE MEDIA QUERY */
+
+/* FISRT IS SCREEN LESS THAN 600 PX SIZE */
+
+@media (max-width: 600px) {
+  .dropdown-content {
+    display: none;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 601px) {
+  .dropdown {
+    display: none;
+  }
 }
